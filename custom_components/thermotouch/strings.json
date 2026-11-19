@@ -1,0 +1,27 @@
+{
+  "config": {
+    "step": {
+      "user": {
+        "title": "ThermoTouch UFH",
+        "description": "Add a ThermoTouch underfloor-heating thermostat. The MAC, token and (for control) command template come from one capture with the thermotouch-bridge; see the docs.",
+        "data": {
+          "name": "Name",
+          "mac": "Thermostat MAC (F0:FE:6B:...)",
+          "token": "Token (12 hex characters)",
+          "command_template": "Command template (optional, enables control)",
+          "host": "Cloud host",
+          "port": "Cloud port",
+          "scan_interval": "Poll interval (seconds)"
+        }
+      }
+    },
+    "error": {
+      "invalid_mac": "That is not a valid MAC address.",
+      "invalid_token": "The token must be 12 hex characters.",
+      "cannot_connect": "Could not reach the ETOP cloud or the token was rejected."
+    },
+    "abort": {
+      "already_configured": "This thermostat is already set up."
+    }
+  }
+}
